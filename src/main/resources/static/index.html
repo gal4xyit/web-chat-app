@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Super Chach</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+<div id="auth-controls" style="position: fixed; top: 10px; right: 10px; z-index: 1001; background: white; padding: 5px; border-radius: 3px; box-shadow: 0 0 5px rgba(0,0,0,0.2);">
+
+</div>
+
+<div id="chat-page">
+  <div class="chat-container">
+    <main id="main-chat-area">
+      <div class="chat-header">
+        <h2>Super Chach</h2>
+      </div>
+      <div class="connecting">
+        Connecting...
+      </div>
+      <ul id="messageArea">
+
+      </ul>
+      <form id="messageForm" name="messageForm">
+        <div class="form-group">
+          <div class="input-group clearfix">
+            <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
+            <button type="submit" class="primary">Send</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <aside id="user-list-sidebar">
+      <h3>Online Users (<span id="user-count">0</span>)</h3>
+      <ul id="connectedUsersList">
+
+      </ul>
+    </aside>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
